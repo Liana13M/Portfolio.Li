@@ -1,0 +1,22 @@
+.propos{
+    background-color: #374349;
+    padding: 30px;
+    border-radius: 25px;
+    img{
+        width: 400px;
+        height: 530px;
+    }
+}
+
+//responsive
+.propos{
+    img{
+        @include respond-to ("tablette"){
+            width: 300px;
+            height: 320px;
+        }
+        @include respond-to ("mobile"){
+            width: 100px;
+        }
+    }
+}

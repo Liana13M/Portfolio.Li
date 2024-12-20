@@ -1,0 +1,40 @@
+.bloc-navbar{
+    width: 233px;
+    height: 100vh;
+    background-color: $navbar-color;
+    position: fixed;
+    ul{
+        list-style-type: none;
+        li{
+            font-size: 30px;
+            line-height: 70px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-family: cursive;
+            &:hover{
+                color: $hover;
+            }
+        }
+    }
+}
+
+//responsive
+.bloc-navbar{
+    @include respond-to ("tablette"){
+        width: 150px;
+    }
+    @include respond-to ("mobile"){
+        width: 100px;
+    }
+    ul li{
+        @include respond-to ("tablette"){
+            font-size: 18px;
+            line-height: 50px;
+        }
+        @include respond-to ("mobile"){
+            font-size: 10px;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+#contact{
+    height: 500px;
+    margin: 50px;
+    .display{
+        @include display(flex, center, center);
+        gap: 100px;
+        background-color: #7F9183;
+        padding: 20px;
+        border-radius: 20px;
+        .left{
+            text-align: center;
+            *{
+                box-sizing: border-box ;
+            }
+            *:focus{
+                outline: none;
+            }
+            background-color: #64787e;
+            padding: 20px;
+            border-radius: 20px;
+            input{
+                width: 300px;
+                padding: 10px;
+                margin-bottom: 10px;
+                border-radius: 10px;
+                background-color: #C6DBF0;
+            }
+            label{
+                font-size: 20px;
+            }
+            textarea{
+                width: 100%;
+                padding: 10px;
+                border-radius: 10px;
+                background-color: #C6DBF0;
+            }
+        }
+        .right{
+            i{
+                font-size: 30px
+            }
+            p{
+                font-size: 20px;
+                font-family: cursive;
+            }
+        }
+    }
+}

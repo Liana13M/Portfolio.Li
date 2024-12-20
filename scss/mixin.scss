@@ -1,0 +1,28 @@
+@mixin display ($d, $jc, $ai){
+    display: $d;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin respond-to($breakpoint){
+    @if $breakpoint == "big"{
+        @media screen and (max-width:$big) {
+            @content;
+        }
+    }
+    @else if  $breakpoint == "ordi"{
+        @media screen and (max-width:$ordi) {
+            @content;
+        }
+    }
+    @else if  $breakpoint == "tablette"{
+        @media screen and (max-width:$tablette) {
+            @content;
+        }
+    }
+    @else if  $breakpoint == "mobile"{
+        @media screen and (max-width:$mobile) {
+            @content;
+        }
+    }
+}

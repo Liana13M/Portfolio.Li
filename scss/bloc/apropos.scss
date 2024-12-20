@@ -1,0 +1,15 @@
+#apropos{
+    @include display (0, center, center);
+    border: none;
+    padding: 45px;
+    .division{
+        .gauche{
+            p{
+                width: 450px;
+            }
+        }
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+}

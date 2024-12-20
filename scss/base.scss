@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.fa-facebook{
+    color: rgb(16, 16, 107);
+}
+.fa-instagram{
+    color: rgb(160, 81, 52);
+}
+.fa-envelope{
+    color: white;
+}
+.fa-whatsapp{
+    color: green;
+}
+
+main{
+    margin-left: 233px;
+    padding: 15px;
+    background-color: #AAB7B7;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+//responsive
+main{
+    @include respond-to ("tablette"){
+        margin-left: 150px;
+    }
+    @include respond-to ("mobile"){
+        margin-left: 100px;
+    }
+}
